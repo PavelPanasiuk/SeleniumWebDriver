@@ -6,7 +6,8 @@ namespace SeleniumWebDriver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Browser browser = new Browser();
+            browser.SomeBrowser();
         }
     }
 }
