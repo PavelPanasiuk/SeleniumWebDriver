@@ -11,7 +11,7 @@ namespace InputAndClickInBrowsers
         //- Инициализация браузера — прменить паттерн синглтон для инициализации браузера   
 
         private static ChromeInitialization _classObject;
-       // private static ChromeDriver _chrome;
+        private static ChromeDriver _chrome;
 
         private ChromeInitialization() { }
 
@@ -22,13 +22,10 @@ namespace InputAndClickInBrowsers
                 if (_classObject == null)
                 {
                     _classObject = new ChromeInitialization();
-                   // _chrome = new ChromeDriver();
+                    _chrome = new ChromeDriver();
                 }
-                // return _chrome;
-                return _classObject;
+                 return _chrome;                
             }
         }
-
     }
-
 }
