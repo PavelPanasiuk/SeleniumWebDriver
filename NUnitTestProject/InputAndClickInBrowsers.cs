@@ -11,19 +11,21 @@ namespace InputAndClickInBrowsers
     [TestFixture(typeof(ChromeDriver))]
     public class TestsWithMultipleBrowsers<TwebDriver> where TwebDriver : IWebDriver, new()
     {
-        // -Инициализация браузера -  применить паттерн синглтон для инициализации браузера
-        // -Открыть www.bbc.com
-        // -Ввести текст в поле поиска
-        // -Кликнуть на первую ссылку на навигации
-        // -Открыть www.bbc.com в chrome, firefos, ie
-        // -Проверить ввод и клик в вышеперечисленных браузерах
-        // -Проверить статус поле поиска (isDisplayed, isEnable) - получить значение методов 
+
+        //-Инициализация браузера  - применить паттерн синглтон для инициализации
+        //-Открыть www.bbc.com
+        //-Ввести текст в поле поиска
+        //-Кликнуть на первую ссылку на навигации
+        //-Открыть www.bbc.com в chrome, Firefox, ie
+        //-Проверить ввод и клик в вышеперечисленных браузерах
+        //-Проверить статус поле поиска (isDisplayed, isEnable) - получить значение методов
 
         private IWebDriver _driver;
 
         [SetUp]
         public void Setup()
         {
+
             _driver = new TwebDriver();
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl("https://www.bbc.com/");
@@ -53,8 +55,8 @@ namespace InputAndClickInBrowsers
 
             //Click first link                                         
             _driver.FindElement(By.XPath("//a[@class='css-vh7bxp-PromoLink e1f5wbog6'][1]")).Click();
-            var urlOfNewPage = _driver.Url;          
-            
+            var urlOfNewPage = _driver.Url;
+
             try
             {
                 Assert.IsTrue(textForSearch == textInCurrentSearchLine);
