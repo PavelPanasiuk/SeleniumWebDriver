@@ -11,6 +11,7 @@ namespace InputAndClickInBrowsers
     [TestFixture(typeof(ChromeDriver))]
     public class TestsWithMultipleBrowsers<TwebDriver> where TwebDriver : IWebDriver, new()
     {
+
         //-Инициализация браузера  - применить паттерн синглтон для инициализации
         //-Открыть www.bbc.com
         //-Ввести текст в поле поиска
@@ -18,6 +19,7 @@ namespace InputAndClickInBrowsers
         //-Открыть www.bbc.com в chrome, Firefox, ie
         //-Проверить ввод и клик в вышеперечисленных браузерах
         //-Проверить статус поле поиска (isDisplayed, isEnable) - получить значение методов
+
         private IWebDriver _driver;
 
         [SetUp]
