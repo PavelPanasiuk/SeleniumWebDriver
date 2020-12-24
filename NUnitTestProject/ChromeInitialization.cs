@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium.Chrome;
+
 
 namespace InputAndClickInBrowsers
 {
-    public class ChromeInitialization : ChromeDriver
+    public class ChromeInitialization
     {
-        //- Инициализация браузера — прменить паттерн синглтон для инициализации браузера   
-
-        private static ChromeInitialization _classObject;
-        private static ChromeDriver _chrome;
+        //- Инициализация браузера — прменить паттерн синглтон для инициализации браузера 
+        private static ChromeDriver _chromeDriverObject;
 
         private ChromeInitialization() { }
 
@@ -19,12 +14,9 @@ namespace InputAndClickInBrowsers
         {
             get
             {
-                if (_classObject == null)
-                {
-                    _classObject = new ChromeInitialization();
-                    _chrome = new ChromeDriver();
-                }
-                 return _chrome;                
+                if (_chromeDriverObject == null)
+                    _chromeDriverObject = new ChromeDriver();
+                return _chromeDriverObject;
             }
         }
     }

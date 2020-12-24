@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using OpenQA.Selenium.Firefox;
+﻿using OpenQA.Selenium.Firefox;
 
 namespace InputAndClickInBrowsers
 {
     public class FireFoxInitialization
     {
-        //- Инициализация браузера — прменить паттерн синглтон для инициализации браузера       
-
-        private static FireFoxInitialization _classObject;
-        private static FirefoxDriver _firefox;
+        //- Инициализация браузера — прменить паттерн синглтон для инициализации браузера   
+        private static FirefoxDriver _firefoxDriverObject;
 
         private FireFoxInitialization() { }
 
@@ -18,12 +13,11 @@ namespace InputAndClickInBrowsers
         {
             get
             {
-                if (_classObject == null)
+                if (_firefoxDriverObject == null)
                 {
-                    _classObject = new FireFoxInitialization();
-                   _firefox = new FirefoxDriver();
+                    _firefoxDriverObject = new FirefoxDriver();
                 }
-                return _firefox;
+                return _firefoxDriverObject;
             }
         }
     }

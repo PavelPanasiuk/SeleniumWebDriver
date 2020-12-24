@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputAndClickInBrowsers", "NUnitTestProject\InputAndClickInBrowsers.csproj", "{AD9866DD-2589-461E-A8D4-166D920517EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputAndClickInBrowsers", "NUnitTestProject\InputAndClickInBrowsers.csproj", "{FDCA7EA8-2296-4474-993D-B7601191D2AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD9866DD-2589-461E-A8D4-166D920517EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD9866DD-2589-461E-A8D4-166D920517EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD9866DD-2589-461E-A8D4-166D920517EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD9866DD-2589-461E-A8D4-166D920517EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDCA7EA8-2296-4474-993D-B7601191D2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCA7EA8-2296-4474-993D-B7601191D2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDCA7EA8-2296-4474-993D-B7601191D2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDCA7EA8-2296-4474-993D-B7601191D2AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EBB77691-AB62-4112-A812-770188D53013}
+		SolutionGuid = {D156BB8C-68D5-4831-9ECF-49426CBBAAB0}
 	EndGlobalSection
 EndGlobal
