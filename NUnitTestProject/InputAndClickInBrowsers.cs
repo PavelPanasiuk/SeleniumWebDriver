@@ -20,6 +20,7 @@ namespace InputAndClickInBrowsers
 
         ChromeDriver _chromeDriver = ChromeInitialization.Instanse;
         FirefoxDriver _firefoxDriver = FireFoxInitialization.Instanse;
+
         //Ниже тесты на каждый из браузеров отдельно
         [SetUp]
         public void Setup()
